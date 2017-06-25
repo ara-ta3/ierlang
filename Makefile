@@ -95,7 +95,7 @@ py2notebook: py2deps compile demo-base
 PY3=python3.4
 PY3_VENV=./.venv-py3
 PY3_VENV_BIN=$(PY3_VENV)/bin/$(PY3)
-SESSION_SRC3=$(PY3_VENV)/lib/python3.4/site-packages/IPython/kernel/zmq/session.py
+SESSION_SRC3=$(PY3_VENV)/lib/$(PY3)/site-packages/IPython/kernel/zmq/session.py
 EMPTY_BYTE_STRING=`python3 -c "print(''.encode())"`
 PATCHED3=patches/patched3
 
